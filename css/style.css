@@ -1,0 +1,295 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.header{
+  background-color: #2b0354;
+  height: 200px;
+  position: relative;
+}
+.header .hed{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header .hed h4{
+  font-size: 28px;
+  color: white;
+}
+
+.header .hed .bars{
+  cursor: pointer;
+  color: white;
+
+}
+
+
+.header .search{
+      /* display: block;
+    margin: 50px auto;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: none; */
+
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media(max-width:767px){
+.header .search{
+top: 120px;
+}
+    
+  }
+.header .ser{
+ position: absolute;
+    background-color: #2b0354e0;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: 1.5s;
+}
+.header .ser.open{
+    transform: translateX(0);
+
+}
+@media(max-width:767px){
+  .header .ser{
+    width: 100%;
+  }
+}
+
+
+.header .ser .closee{
+  position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+  color: white;
+  }
+
+.header .ser ul{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+.header .ser ul li {
+margin: 24px;
+
+}
+
+
+.header .ser ul li  a{
+font-size: 20px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+    /* background-color: brown; */
+    padding-top: 50px;
+}
+.content .container{
+    background-color: white;
+}
+
+.content .container .olvs {
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+
+}
+
+.content .container .olvs  .box{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+
+}
+
+
+.content .container .olvs  .box img {
+    width:  300px;
+    height: 300px;
+border-radius: 50%;
+border: 10px solid black;
+}
+.content .container .olvs  .box p{
+color: #777;
+}
+
+
+
+
+.footer{
+background-color: #2b0354;
+padding: 70px 0 20px ;
+}
+
+.footer .cont{
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+        direction: ltr;
+
+}
+.footer .cont .box{
+  padding-left: 20px;
+}
+.footer .cont .box h3{
+color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 40px;
+  }
+
+
+.footer .cont .box .socela span a{
+background-color: #262323;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+        margin-right: 15px; 
+    transition: 0.5s;
+}
+
+.footer .cont .box  .socela span:first-child:hover a {
+  background-color: #1877f2;
+
+}
+
+.footer .cont .box  .socela span:nth-child(2):hover a {
+  background-color: purple;
+
+
+}
+
+.footer .cont .box  .socela span:nth-child(3):hover a {
+  background-color: #1877f2
+
+}
+
+.footer .cont .box .line{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+
+}
+.footer .cont .box .line i{
+  color: #2196f3;
+  font-size: 25px;
+  margin: 10px;
+}
+
+
+
+
+
+.footer .cont .box .information h2{
+color: white;
+    font-size: 30px;
+    margin: 0 0 20px;
+
+}
+.footer .cont .box .information p{
+line-height: 1.6;
+    color: #777;
+}
+
+
+.footer .cont .box img{
+    width: 78px;
+    height: 78px;
+    border: 3px solid white;
+    margin: 1px;
+
+
+}
+
+
+
+@media(max-width:767px){
+  .footer{
+    text-align: center;
+  }
+  .footer .cont .box .line{
+    flex-direction: column;
+        margin-top: 20px;
+  }
+  .footer .cont .box .information p{
+    padding: 2px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
